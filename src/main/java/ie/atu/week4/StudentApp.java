@@ -7,6 +7,7 @@ public class StudentApp {
 
         Scanner sc = new Scanner(System.in);
 
+        //First student using default constructor
         Student firstPerson = new Student();
         System.out.println("Enter student 1 name: ");
         firstPerson.setName(sc.nextLine());
@@ -17,7 +18,17 @@ public class StudentApp {
 
         System.out.println(firstPerson.toString());
 
+        //Second Student using a constructor that only accepts name
 
+        System.out.println("Enter student 2 name: ");
+        String name2 = sc.nextLine();
+        Student secondPerson = new Student(name2);
+        System.out.println("Enter student 2 email: ");
+        secondPerson.setEmail(sc.nextLine());
+        System.out.println("Enter student 2 course: ");
+        secondPerson.setCourse(sc.nextLine());
+
+        System.out.println(secondPerson.toString());
 
         /*Student firstPerson = new Student();
         firstPerson.setName("Lance");
