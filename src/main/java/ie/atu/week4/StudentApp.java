@@ -16,8 +16,6 @@ public class StudentApp {
         System.out.println("Enter student 1 course: ");
         firstPerson.setCourse(sc.nextLine());
 
-        System.out.println(firstPerson.toString());
-
         //Second Student using a constructor that only accepts name
 
         System.out.println("Enter student 2 name: ");
@@ -28,22 +26,18 @@ public class StudentApp {
         System.out.println("Enter student 2 course: ");
         secondPerson.setCourse(sc.nextLine());
 
+        //Third student using a constructor that accepts name, email and course as parameters
+
+        System.out.println("Enter student 3 name: ");
+        String name3 = sc.nextLine();
+        System.out.println("Enter student 3 email: ");
+        String email3 = sc.nextLine();
+        System.out.println("Enter student 3 course: ");
+        String course3 = sc.nextLine();
+        Student thirdPerson = new Student(name3, email3, course3);
+
+        System.out.println(firstPerson.toString());
         System.out.println(secondPerson.toString());
-
-        /*Student firstPerson = new Student();
-        firstPerson.setName("Lance");
-        firstPerson.setEmail("g00428876@atu.ie");
-        firstPerson.setCourse("Software");
-        System.out.println(firstPerson.toString());*/
-
-        /*second student
-
-        Student secondPerson = new Student("Tommy");
-        System.out.println(secondPerson.toString());
-
-        //third student
-
-        Student thirdPerson = new Student("John","John@atu.ie","Physics");
-        System.out.println(thirdPerson.toString());*/
+        System.out.println(thirdPerson.toString());
     }
 }
